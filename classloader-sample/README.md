@@ -23,6 +23,9 @@
     * 플랫폼 클래스로더 - JAVA_HOME\lib\ext 폴더 또는 java.ext.dirs 시스템 변수에 해당하는 위치에 있는 클래스를 읽는다.
     * 애플리케이션 클래스로더 - 애플리케이션 클래스패스(애플리케이션 실행할 때 주는 -classpath 옵션 또는 java.class.path 환경 변수의 값에 해당하는 위치)에서 클래스를 읽는다.
 
+- 참고
+> [인프런 백기선님 강의](https://www.inflearn.com/course/the-java-code-manipulation)
+
 
 
 
