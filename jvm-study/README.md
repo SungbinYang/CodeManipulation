@@ -30,10 +30,10 @@
   * 클로저, 그루비, JRuby, Jython, Kotlin, Scala, ...
 
 - 참고
->> [인프런 백기선님 강의](https://www.inflearn.com/course/the-java-code-manipulation)
->> JIT 컴파일러: https://aboullaite.me/understanding-jit-compiler-just-in-time-compiler/
->> JDK, JRE 그리고 JVM: https://howtodoinjava.com/java/basics/jdk-jre-jvm/
->> https://en.wikipedia.org/wiki/List_of_JVM_languages
+> [인프런 백기선님 강의](https://www.inflearn.com/course/the-java-code-manipulation)
+> JIT 컴파일러: https://aboullaite.me/understanding-jit-compiler-just-in-time-compiler/
+> JDK, JRE 그리고 JVM: https://howtodoinjava.com/java/basics/jdk-jre-jvm/
+> https://en.wikipedia.org/wiki/List_of_JVM_languages
 
 
 
