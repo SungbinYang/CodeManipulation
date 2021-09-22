@@ -28,3 +28,35 @@
     </executions>
 </plugin>
 ```
+## 메이븐 빌드
+
+``` bash
+  mvn clean verify
+```
+
+## 커버리지 만족 못할시 빌드 실패하도록 설정
+``` xml
+<execution>
+            <id>jacoco-check</id>
+            <goals>
+                <goal>check</goal>
+            </goals>
+            <configuration>
+                <rules>
+                    <rule>
+                        <element>PACKAGE</element>
+                        <limits>
+                            <limit>
+                                <counter>LINE</counter>
+                                <value>COVEREDRATIO</value>
+                                <minimum>0.50</minimum>
+                            </limit>
+                        </limits>
+                    </rule>
+                </rules>
+            </configuration>
+        </execution>
+
+```
+
+
