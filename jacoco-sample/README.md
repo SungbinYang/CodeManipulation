@@ -37,11 +37,11 @@
 ## 커버리지 만족 못할시 빌드 실패하도록 설정
 ``` xml
 <execution>
-            <id>jacoco-check</id>
-            <goals>
-                <goal>check</goal>
-            </goals>
-            <configuration>
+    <id>jacoco-check</id>
+         <goals>
+            <goal>check</goal>
+         </goals>
+   <configuration>
                 <rules>
                     <rule>
                         <element>PACKAGE</element>
@@ -54,8 +54,8 @@
                         </limits>
                     </rule>
                 </rules>
-            </configuration>
-        </execution>
+    </configuration>
+</execution>
 
 ```
 
