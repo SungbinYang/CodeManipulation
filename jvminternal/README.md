@@ -25,7 +25,8 @@
 - 네이티브 메소드 라이브러리
   * C, C++로 작성 된 라이브러리
 
-- 참고 
+- 참고
+> [인프런 백기선님 강의](https://www.inflearn.com/course/the-java-code-manipulation)
 >https://www.geeksforgeeks.org/jvm-works-jvm-architecture/
 >https://dzone.com/articles/jvm-architecture-explained
 >http://blog.jamesdbloom.com/JVMInternals.html
