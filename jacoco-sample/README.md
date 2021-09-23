@@ -88,3 +88,34 @@ test {
     useJUnitPlatform()
 }
 ```
+
+# 모자에서 토끼를 꺼내는 마술
+
+## 아무것도 없는 Moja에서 “Rabbit”을 꺼내는 마술
+
+- Moja.java
+
+``` java
+public class Moja {
+
+    public String pullOut() {
+        return "";
+    }
+}
+```
+
+- Masulsa.java
+
+``` java
+public class Masulsa {
+
+    public static void main(String[] args) {
+        System.out.println(new Moja().pullOut());
+    }
+}
+```
+
+## 바이트코드 조작 라이브러리
+- ASM: https://asm.ow2.io/
+- Javassist: https://www.javassist.org/
+- ByteBuddy: https://bytebuddy.net/#/
