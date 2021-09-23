@@ -59,4 +59,32 @@
 
 ```
 
+## 코드커버리지 툴(Jacoco)는 어떻게 test 안되것들을 알 수 있을까?
+- 바이트 코드를 읽어서 바이트 코드에서 코드커버리지가 챙겨야 하는 부분을 갯수를 세고 코드 실행 할 때 몇개 실행했는지 카운팅 그래서 비교 (바이트코드 조작과 관련)
 
+## 깨달은 점
+- 기선님의 강의에서는 maven을 주로 쓰신다. 하지만 이것을 gradle로 바꿔보면 어떨까? 하는 생각이 들었다.
+- gradle로 바꾸면 아래와 같다.
+
+``` gradle
+plugins {
+    id 'java'
+    id 'jacoco'
+}
+
+group 'me.sungbin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+```
