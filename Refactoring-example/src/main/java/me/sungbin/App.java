@@ -41,5 +41,17 @@ public class App {
         System.out.println(superclass);
         System.out.println();
         Arrays.stream(MyBook.class.getInterfaces()).forEach(System.out::println);
+        System.out.println();
+        Arrays.stream(MyBook.class.getAnnotations()).forEach(System.out::println);
+        System.out.println();
+        Arrays.stream(Book.class.getDeclaredFields()).forEach(f -> {
+            Arrays.stream(f.getAnnotations()).forEach(a -> {
+                if (a instanceof MyAnnotation) {
+                    MyAnnotation myAnnotation = (MyAnnotation) a;
+                    System.out.println(myAnnotation.value());
+                    System.out.println(myAnnotation.number());
+                }
+            });
+        });
     }
 }
