@@ -10,3 +10,6 @@
 - 모자에서 토끼를 꺼내는 마술
 - javaagent 실습
 - 바이트 코드 조작 정리
+
+## 리플렉션
+- 스프링 Dependency Injection은 어떻게 동작할까?
