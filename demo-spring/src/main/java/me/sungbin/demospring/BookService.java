@@ -1,11 +1,8 @@
 package me.sungbin.demospring;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+public interface BookService {
 
-@Service
-@RequiredArgsConstructor
-public class BookService {
+    void rent(Book book);
 
-    final BookRepository bookRepository;
+    void returnBook(Book book);
 }
