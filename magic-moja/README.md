@@ -69,3 +69,18 @@ public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment 
 ```
 - 유틸리티
   * [Javapoet](https://github.com/square/javapoet): 소스 코드 생성 유틸리
+
+## 애노테이션 프로세서 정리
+- 애노테이션 프로세서 사용 예
+  * 롬복
+  * AutoService: java.util.ServiceLoader용 파일 생성 유틸리티
+  * @Override
+    * https://stackoverflow.com/questions/18189980/how-do-annotations-like-override-work-internally-in-java/18202623
+  * [Dagger 2](https://github.com/google/dagger): 컴파일 타임 DI 제공
+  * 안드로이드 라이브러리
+    * [ButterKinfe](http://jakewharton.github.io/butterknife/): @BindView (뷰 아이디와 애노테이션 붙인 필드 바인딩)
+    * [DeepLinkDispatch](https://github.com/airbnb/DeepLinkDispatch): 특정 URI 링크를 Activity로 연결할 때 사용
+- 애노테이션 프로세서 장점
+  * 런타임 비용이 제로
+- 애노테이션 프로세서 단점
+  * 기존 클래스 코드를 변경할 때는 약간의 hack이 필요하다. 
